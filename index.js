@@ -1,13 +1,15 @@
 // Your code here
 const dodger = document.getElementById('dodger');
-const leftNumbers = dodger.style.left.replace("px", "");
-const left = parseInt(leftNumbers, 10);
 
 const moveDodgerLeft = () => {
+  const leftNumbers = dodger.style.left.replace("px", "");
+  const left = parseInt(leftNumbers, 10);
   dodger.style.left = (left > 0) ? `${left - 1}px` : dodger.style.left;
 }
 
 const moveDodgerRight = () => {
+  const leftNumbers = dodger.style.left.replace("px", "");
+  const left = parseInt(leftNumbers, 10);
   dodger.style.left = (left < 360) ? `${left + 1}px` : dodger.style.left;
 }
 
